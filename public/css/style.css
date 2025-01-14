@@ -1,0 +1,166 @@
+.container{
+    flex: 1;
+}
+body{
+    font-family: "Plus Jakarta Sans", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navLogo{
+    color: rgb(243, 107, 166);
+    font-size: 48px;
+}
+.navLogo:hover{
+    color: rgb(255, 66, 148);
+}
+.navbar{
+    position: sticky;
+    height: 70px;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    height: 5rem;
+}
+.nav-link{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: rgb(255, 66, 148);
+}
+@media screen and (max-width: 768px){
+    .navLogo{
+        font-size: 30px;
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+}
+
+/* Footer */
+.f_info a{
+    color: black;
+    text-decoration: none;
+}
+.f_info a:hover{
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+    height: 10vh;
+}
+.f_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+/* Listings */
+.listings_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.listing_card{
+    justify-self: center;
+    border-radius: 8%;
+}
+.listing_card:hover{
+    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.listing_card img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8%;
+}
+.listing_card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    opacity: 0;
+    border-radius: 8%;
+    transition: 0.8s;
+}
+.listing_card .overlay .location{
+    position: absolute;
+    bottom: -10px;
+    margin: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.listing_card:hover .overlay{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.listing_card:hover .overlay .location{
+    bottom: 0px;
+    transition: 0.8s;
+}
+
+/* form */
+.add_listing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* show */
+.show_card img{
+    height: 45vh;
+    object-fit: cover;
+}
+
+/* error */
+.errorMessage{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+
+
+/* utilities */
+.text_deco_none{
+    text-decoration: none;
+}
+.border_none{
+    border: none;
+}
+.text_center{
+    text-align: center;
+}
+.dis_flex{
+    display: flex;
+}
+.flex_col{
+    flex-direction: column;
+}
+.jus_cen{
+    justify-content: center;
+}
+.aln_cen{
+    align-items: center;
+}
+.jus_sp_a{
+    justify-content: space-around;
+}
+
+

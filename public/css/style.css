@@ -135,6 +135,18 @@ body{
     text-align: center;
 }
 
+/* reviews */
+.reviews_box{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+.review_card{
+    border: none;
+}
+
 
 
 /* utilities */

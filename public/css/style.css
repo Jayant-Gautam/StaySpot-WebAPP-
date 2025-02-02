@@ -70,6 +70,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    margin-top: 30px;
 }
 .listing_card{
     justify-self: center;
@@ -147,7 +148,16 @@ body{
     border: none;
 }
 
-
+/* flash.ejs */
+.flash{
+    display: flex;
+    align-items: center;
+    width: minmax(200px, 20vw);
+    position: fixed;
+    bottom: 11vh;
+    transition: all 0.5s ease-out;
+    z-index: 1000;
+}
 
 /* utilities */
 .text_deco_none{
